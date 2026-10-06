@@ -9723,5 +9723,7 @@ $("profe").addEventListener("change",e=>{if(e.target.dataset.fw){FW=e.target.val
 home();
 window.addEventListener("load",()=>{try{const q=location.hash+location.search,r=q.match(/ruta=(M[1-9])\b/i),m=q.match(/(?:ficha|nivel)=([A-Za-z0-9-]+)/i),c=q.match(/capsula=([a-z]{2})/i);if(r){setRuta(r[1].toUpperCase());if(view.s==="home")home();}if(m)goCode(decodeURIComponent(m[1]));else if(c&&CZ[c[1].toLowerCase()]){const k=c[1].toLowerCase();world(k);czOpen(k);}}catch(e){}});
 try{const m=sessionStorage.getItem("taller-hola");if(m){sessionStorage.removeItem("taller-hola");toast(m);}}catch(e){}
+window.TALLER_API={snap,restore,starStr,today,profe,P:()=>P,saveP,toast,nkey,ckey};
 })();
 </script>
+<script src="nube.js"></script>
